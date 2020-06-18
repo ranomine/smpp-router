@@ -10,7 +10,7 @@ baseline: spec
 					versionString: '0.65';
 					repository: 'http://smalltalkhub.com/mc/PharoExtras/RFB/main/' ];
 			baseline: 'SMPP' with: [
-				spec repository: 'github://moiji-mobile/smpp-codec:master/mc' ];
+				spec repository: 'github://ranomine/smpp-codec:master/mc' ];
 			project: 'OsmoLogging' with: [
 				spec
 					className: #ConfigurationOfOsmoLogging;

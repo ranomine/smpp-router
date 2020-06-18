@@ -1,4 +1,4 @@
-as yet unclassified
+baselines
 baseline: spec
 	<baseline>
 
@@ -7,25 +7,25 @@ baseline: spec
 			project: 'RFB' with: [
 				spec
 					className: #ConfigurationOfRFB;
-					versionString: '0.62';
+					versionString: '0.65';
 					repository: 'http://smalltalkhub.com/mc/PharoExtras/RFB/main/' ];
 			baseline: 'SMPP' with: [
-				spec repository: 'github://moiji-mobile/smpp-codec:release-10/mc' ];
+				spec repository: 'github://moiji-mobile/smpp-codec:release-11/mc' ];
 			project: 'OsmoLogging' with: [
 				spec
 					className: #ConfigurationOfOsmoLogging;
-					versionString: '2';
+					versionString: '5';
 					repository: 'http://smalltalkhub.com/mc/osmocom/Logging/main/' ];
 			project: 'ZincHTTPComponents' with: [
 				spec
 					className: #ConfigurationOfZincHTTPComponents;
-					versionString: '2.6.7';
+					versionString: '2.9.3';
 					loads: #('REST' );
 					repository: 'http://mc.stfx.eu/ZincHTTPComponents/' ];
 			project: 'StatsDClient' with: [
 				spec
 					className: #ConfigurationOfStatsDClient;
-					versionString: '3';
+					versionString: '6';
 					repository: 'http://smalltalkhub.com/mc/hfreyther2/StatsD/main/' ].
 	].
 
@@ -38,7 +38,7 @@ baseline: spec
 	spec for: #'pharo6.x' do: [
 		spec baseline: 'Voyage' with: [
 			spec
-				repository: 'github://pharo-nosql/voyage:master/mc';
+				repository: 'github://zecke/voyage-stable:v1.5.4_1-patched/mc';
 				loads: #('mongo tests') ].
 		spec package: #SMPPRouter with: [
 			spec requires: #('SMPP' 'OsmoLogging' 'Voyage' 'ZincHTTPComponents' 'StatsDClient')].

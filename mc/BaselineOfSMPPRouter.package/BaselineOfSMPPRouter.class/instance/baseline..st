@@ -25,7 +25,7 @@ baseline: spec
 			project: 'StatsDClient' with: [
 				spec
 					className: #ConfigurationOfStatsDClient;
-					versionString: '6';
+					versionString: '4';
 					repository: 'http://smalltalkhub.com/mc/hfreyther2/StatsD/main/' ].
 	].
 
